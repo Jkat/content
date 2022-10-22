@@ -12,6 +12,7 @@ tags:
   - drag and drop
 browser-compat: api.DataTransferItemList
 ---
+
 {{APIRef("HTML Drag and Drop API")}}
 
 The **`DataTransferItemList`** object is a list of {{domxref("DataTransferItem")}} objects representing items being dragged. During a _drag operation_, each {{domxref("DragEvent")}} has a {{domxref("DragEvent.dataTransfer","dataTransfer")}} property and that property is a `DataTransferItemList`.
@@ -20,12 +21,12 @@ The individual items can be accessed using the [array operator](/en-US/docs/Web/
 
 This interface has no constructor.
 
-## Properties
+## Instance properties
 
 - {{domxref("DataTransferItemList.length")}} {{ReadOnlyInline}}
   - : An `unsigned long` that is the number of drag items in the list.
 
-## Methods
+## Instance methods
 
 - {{domxref("DataTransferItemList.add()")}}
   - : Adds an item (either a {{domxref("File")}} object or a string) to the drag item list and returns a {{domxref("DataTransferItem")}} object for the new item.
@@ -102,10 +103,21 @@ function dragendHandler(ev) {
 
 ```html
 <div>
-  <p id="source" ondragstart="dragstartHandler(event);" ondragend="dragendHandler(event);" draggable="true">
-     Select this element, drag it to the Drop Zone and then release the selection to move the element.</p>
+  <p
+    id="source"
+    ondragstart="dragstartHandler(event);"
+    ondragend="dragendHandler(event);"
+    draggable="true">
+    Select this element, drag it to the Drop Zone and then release the selection
+    to move the element.
+  </p>
 </div>
-<div id="target" ondrop="dropHandler(event);" ondragover="dragoverHandler(event);">Drop Zone</div>
+<div
+  id="target"
+  ondrop="dropHandler(event);"
+  ondragover="dragoverHandler(event);">
+  Drop Zone
+</div>
 ```
 
 ### CSS

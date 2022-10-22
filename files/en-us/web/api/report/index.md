@@ -11,6 +11,7 @@ tags:
   - Reporting API
 browser-compat: api.Report
 ---
+
 {{SeeCompatTable}}{{APIRef("Reporting API")}}
 
 The `Report` interface of the [Reporting API](/en-US/docs/Web/API/Reporting_API) represents a single report.
@@ -21,7 +22,7 @@ Reports can be accessed in a number of ways:
 - Via the `reports` parameter of the callback function passed into the [`ReportingObserver()`](/en-US/docs/Web/API/ReportingObserver/ReportingObserver) constructor upon creation of a new observer instance. This contains the list of reports currently contained in the observer's report queue.
 - By sending requests to the endpoints defined via the {{httpheader("Report-To")}} HTTP header.
 
-## Properties
+## Instance properties
 
 - {{domxref("Report.body")}} {{experimental_inline}} {{ReadOnlyInline}}
   - : The body of the report, which is a `ReportBody` object containing the detailed report information.
@@ -30,7 +31,7 @@ Reports can be accessed in a number of ways:
 - {{domxref("Report.url")}} {{experimental_inline}} {{ReadOnlyInline}}
   - : The URL of the document that generated the report.
 
-## Methods
+## Instance methods
 
 _This interface has no methods defined on it._
 

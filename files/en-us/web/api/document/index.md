@@ -10,6 +10,7 @@ tags:
   - Reference
 browser-compat: api.Document
 ---
+
 {{APIRef("DOM")}}
 
 The **`Document`** interface represents any web page loaded in the browser and serves as an entry point into the web page's content, which is the [DOM tree](/en-US/docs/Web/API/Document_object_model/Using_the_W3C_DOM_Level_1_Core).
@@ -25,7 +26,7 @@ The `Document` interface describes the common properties and methods for any kin
 - {{DOMxRef("Document.Document", "Document()")}}
   - : Creates a new `Document` object.
 
-## Properties
+## Instance properties
 
 _This interface also inherits from the {{DOMxRef("Node")}} and {{DOMxRef("EventTarget")}} interfaces._
 
@@ -173,7 +174,7 @@ _The `Document` interface for HTML documents inherits from the {{DOMxRef("HTMLDo
 - {{DOMxRef("Document.xmlVersion")}} {{Deprecated_Inline}}
   - : Returns the version number as specified in the XML declaration or `"1.0"` if the declaration is absent.
 
-## Methods
+## Instance methods
 
 _This interface also inherits from the {{DOMxRef("Node")}} and {{DOMxRef("EventTarget")}} interfaces._
 

@@ -13,6 +13,7 @@ tags:
   - Interface
 browser-compat: api.CSSTranslate
 ---
+
 {{SeeCompatTable}}{{APIRef("CSS Typed Object Model API")}}
 
 The **`CSSTranslate`** interface of the {{domxref('CSS_Object_Model#css_typed_object_model','','',' ')}} represents the [translate()](/en-US/docs/Web/CSS/transform-function/translate) value of the individual {{CSSXRef('transform')}} property in CSS. It inherits properties and methods from its parent {{domxref('CSSTransformValue')}}.
@@ -24,7 +25,7 @@ The **`CSSTranslate`** interface of the {{domxref('CSS_Object_Model#css_typed_ob
 - {{domxref("CSSTranslate.CSSTranslate", "CSSTranslate()")}} {{Experimental_Inline}}
   - : Creates a new `CSSTranslate` object.
 
-## Properties
+## Instance properties
 
 - {{domxref('CSSTranslate.x','x')}} {{Experimental_Inline}}
   - : Returns or sets the x-axis value.

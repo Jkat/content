@@ -6,6 +6,7 @@ tags:
   - Guide
   - JavaScript
 ---
+
 {{jsSidebar("More")}}
 
 ECMAScript 5 introduced [strict mode](/en-US/docs/Web/JavaScript/Reference/Strict_mode) which is now implemented in all major browsers (including IE10). While making web browsers interpret code as strict is easy (just add `'use strict';` at the top of your source code), transitioning an existing code base to strict mode requires a bit more work.
@@ -28,7 +29,7 @@ When adding `'use strict';`, the following cases will throw a {{jsxref("SyntaxEr
 - Using [`eval`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval) or [`arguments`](/en-US/docs/Web/JavaScript/Reference/Functions/arguments) as variable or function argument name
 - Using one of the newly [reserved keywords](/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords) (in prevision for future language features): `implements`, `interface`, `let`, `package`, `private`, `protected`, `public`, `static`, and `yield`
 - Declaring two function parameters with the same name `function f(a, b, b) {}`
-- Declaring the same property name twice in an  object literal `{a: 1, b: 3, a: 7}`. This constraint was later removed ([bug 1041128](https://bugzilla.mozilla.org/show_bug.cgi?id=1041128)).
+- Declaring the same property name twice in an object literal `{a: 1, b: 3, a: 7}`. This constraint was later removed ([bug 1041128](https://bugzilla.mozilla.org/show_bug.cgi?id=1041128)).
 
 These errors are good, because they reveal plain errors or bad practices. They occur before the code is running.
 
@@ -40,7 +41,7 @@ JavaScript used to silently fail in contexts where what was done was an error. S
 
 ```js
 function f(x) {
-  'use strict';
+  "use strict";
   const a = 12;
   b = a + x * 35; // error!
 }
@@ -50,10 +51,11 @@ f(42);
 This used to change a value on the global object which is rarely the expected effect. If you really want to set a value to the global object, pass it as an argument and explicitly assign it as a property:
 
 ```js
-const global = this; // in the top-level context, "this" always
-                     // refers to the global object
+// in the top-level context, "this" always
+// refers to the global object
+const global = this;
 function f(x) {
-  'use strict';
+  "use strict";
   const a = 12;
   global.b = a + x * 35;
 }
@@ -63,7 +65,7 @@ f(42);
 #### Trying to delete a non-configurable property
 
 ```js
-'use strict';
+"use strict";
 delete Object.prototype; // error!
 ```
 
@@ -75,11 +77,11 @@ Accessing `arguments.callee`, `arguments.caller`, `anyFunction.caller`, or `anyF
 
 ```js
 // example taken from vanillajs: http://vanilla-js.com/
-const s = document.getElementById('thing').style;
+const s = document.getElementById("thing").style;
 s.opacity = 1;
 (function () {
-  if ((s.opacity -= .1) < 0) {
-    s.display = 'none';
+  if ((s.opacity -= 0.1) < 0) {
+    s.display = "none";
   } else {
     setTimeout(arguments.callee, 40);
   }
@@ -89,12 +91,13 @@ s.opacity = 1;
 which can be rewritten as:
 
 ```js
-'use strict';
-const s = document.getElementById('thing').style;
+"use strict";
+const s = document.getElementById("thing").style;
 s.opacity = 1;
-(function fadeOut() { // name the function
-  if ((s.opacity -= .1) < 0) {
-    s.display = 'none';
+(function fadeOut() {
+  // name the function
+  if ((s.opacity -= 0.1) < 0) {
+    s.display = "none";
   } else {
     setTimeout(fadeOut, 40); // use the name of the function
   }
@@ -124,11 +127,11 @@ A potential "downside" of moving strict code to strict mode is that the semantic
 1. Write your code as strict and make sure no strict-only errors (from the above "New runtime errors" section) are thrown.
 2. Stay away from semantic differences
 
-    1. `eval`: use it only if you know what you're doing
-    2. `arguments`: always access function arguments via their name or perform a copy of the arguments object using:
-        `const args = Array.prototype.slice.call(arguments)`
-        as the first line of your function
-    3. `this`: only use `this` when it refers to an object you created.
+   1. `eval`: use it only if you know what you're doing
+   2. `arguments`: always access function arguments via their name or perform a copy of the arguments object using:
+      `const args = Array.prototype.slice.call(arguments)`
+      as the first line of your function
+   3. `this`: only use `this` when it refers to an object you created.
 
 ## See also
 

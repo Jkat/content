@@ -10,6 +10,7 @@ tags:
   - Polyfill
 browser-compat: javascript.builtins.Int8Array
 ---
+
 {{JSRef}}
 
 The **`Int8Array`** typed array represents an array of twos-complement 8-bit signed integers. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
@@ -125,7 +126,9 @@ const z = new Int8Array(buffer, 1, 4);
 console.log(z.byteOffset); // 1
 
 // From an iterable
-const iterable = function*() { yield* [1, 2, 3]; }();
+const iterable = (function* () {
+  yield* [1, 2, 3];
+})();
 const int8FromIterable = new Int8Array(iterable);
 console.log(int8FromIterable);
 // Int8Array [1, 2, 3]

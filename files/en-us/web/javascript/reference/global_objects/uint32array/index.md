@@ -10,6 +10,7 @@ tags:
   - Polyfill
 browser-compat: javascript.builtins.Uint32Array
 ---
+
 {{JSRef}}
 
 The **`Uint32Array`** typed array represents an array of 32-bit unsigned integers in the platform byte order. If control over byte order is needed, use {{jsxref("DataView")}} instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
@@ -125,7 +126,9 @@ const z = new Uint32Array(buffer, 4, 4);
 console.log(z.byteOffset); // 4
 
 // From an iterable
-const iterable = function*() { yield* [1, 2, 3]; }();
+const iterable = (function* () {
+  yield* [1, 2, 3];
+})();
 const uint32FromIterable = new Uint32Array(iterable);
 console.log(uint32FromIterable);
 // Uint32Array [1, 2, 3]

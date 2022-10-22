@@ -7,6 +7,7 @@ tags:
   - Introduction
   - JavaScript
 ---
+
 {{JsSidebar}}
 
 ## What is JavaScript?
@@ -21,11 +22,11 @@ JavaScript can function as both a [procedural](https://en.wikipedia.org/wiki/Pro
 
 JavaScript's dynamic capabilities include runtime object construction, variable parameter lists, function variables, dynamic script creation (via [`eval`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval)), object introspection (via `for ... in`), and source code recovery (JavaScript programs can decompile function bodies back into their source text).
 
-For a more in depth discussion of JavaScript programming follow the [JavaScript resources](#javascript_resources) links below.
+For a more in depth discussion of JavaScript programming, follow the [JavaScript resources](#javascript_resources) links below.
 
 ## What JavaScript implementations are available?
 
-The Mozilla project provides two JavaScript implementations. The first **ever** JavaScript was created by Brendan Eich at Netscape, and has since been updated to conform to ECMA-262 Edition 5 and later versions. This engine, code named [SpiderMonkey](https://spidermonkey.dev/), is implemented in C/C++. The [Rhino](https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)) engine, created primarily by Norris Boyd (also at Netscape) is a JavaScript implementation written in Java. Like SpiderMonkey, Rhino is ECMA-262 Edition 5 compliant.
+The Mozilla project provides two JavaScript implementations. The first **ever** JavaScript was created by Brendan Eich at Netscape, and has since been updated to conform to ECMA-262 Edition 5 and later versions. This engine, code named [SpiderMonkey](https://spidermonkey.dev/), is implemented in C/C++. The [Rhino](<https://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)>) engine, created primarily by Norris Boyd (also at Netscape) is a JavaScript implementation written in Java. Like SpiderMonkey, Rhino is ECMA-262 Edition 5 compliant.
 
 Several major runtime optimizations such as TraceMonkey (Firefox 3.5), JägerMonkey (Firefox 4) and IonMonkey were added to the SpiderMonkey JavaScript engine over time. Work is always ongoing to improve JavaScript execution performance.
 

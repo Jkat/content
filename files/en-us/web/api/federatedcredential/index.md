@@ -12,6 +12,7 @@ tags:
   - Experimental
 browser-compat: api.FederatedCredential
 ---
+
 {{SeeCompatTable}}{{APIRef("Credential Management API")}}
 
 The **`FederatedCredential`** interface of the [Credential Management API](/en-US/docs/Web/API/Credential_Management_API) provides information about credentials from a federated identity provider. A federated identity provider is an entity that a website trusts to correctly authenticate a user, and that provides an API for that purpose. [OpenID Connect](https://openid.net/developers/specs/) is an example of a federated identity provider framework.
@@ -25,7 +26,7 @@ In browsers that support it, an instance of this interface may be passed in the 
 - {{domxref("FederatedCredential.FederatedCredential()","FederatedCredential()")}} {{Experimental_Inline}}
   - : Creates a new `FederatedCredential` object.
 
-## Properties
+## Instance properties
 
 _Inherits properties from its ancestor, {{domxref("Credential")}}._
 
@@ -38,7 +39,7 @@ _Inherits properties from its ancestor, {{domxref("Credential")}}._
 
 None.
 
-## Methods
+## Instance methods
 
 None.
 

@@ -6,6 +6,7 @@ tags:
   - MathML
   - Project
 ---
+
 Fonts with appropriate Unicode coverage and Open Font Format features are required for good math rendering.
 This page describes how users can install such math fonts to properly display MathML in browsers.
 
@@ -24,7 +25,7 @@ Install the _Latin Modern Math_ and _STIX Two Math_ fonts as follows:
 5. Open the `static_otf.zip` ZIP archive, and then move inside the `static_otf` directory. Among the files there, you will find a `STIXTwoMath-Regular` file.
 6. Open the `STIXTwoMath-Regular` file and click the **Install** button. If desired, you may also do the same for the other font files in the directory.
 
-> **Note:** _Cambria Math_ is installed by default on Windows 7 and later versions and should ensure relatively good MathML rendering.
+> **Note:** _Cambria Math_ is installed by default on Windows and should ensure relatively good MathML rendering.
 
 ### macOS
 

@@ -9,6 +9,7 @@ tags:
   - String
 browser-compat: javascript.builtins.String.concat
 ---
+
 {{JSRef}}
 
 The **`concat()`** method concatenates
@@ -18,7 +19,7 @@ the string arguments to the calling string and returns a new string.
 
 ## Syntax
 
-```js
+```js-nolint
 concat(str1)
 concat(str1, str2)
 concat(str1, str2, /* …, */ strN)
@@ -58,7 +59,7 @@ console.log(hello.concat('Kevin', '. Have a nice day.'));
 const greetList = ['Hello', ' ', 'Venkat', '!'];
 "".concat(...greetList)  // "Hello Venkat!"
 
-"".concat({})    // [object Object]
+"".concat({})    // "[object Object]"
 "".concat([])    // ""
 "".concat(null)  // "null"
 "".concat(true)  // "true"

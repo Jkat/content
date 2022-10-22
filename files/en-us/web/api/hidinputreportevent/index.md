@@ -10,13 +10,14 @@ tags:
   - Experimental
 browser-compat: api.HIDInputReportEvent
 ---
+
 {{securecontext_header}}{{APIRef("WebHID API")}}{{SeeCompatTable}}
 
 The **`HIDInputReportEvent`** interface of the {{domxref('WebHID API')}} is passed to {{domxref("HIDDevice.inputreport_event")}} when an input report is received from any associated HID device.
 
 {{InheritanceDiagram}}
 
-## Properties
+## Instance properties
 
 _This interface also inherits properties from {{domxref("Event")}}._
 
@@ -27,7 +28,7 @@ _This interface also inherits properties from {{domxref("Event")}}._
 - {{domxref("HIDInputReportEvent.reportId")}} {{ReadOnlyInline}} {{Experimental_Inline}}
   - : The one-byte identification prefix for this report, or 0 if the HID interface does not use report IDs.
 
-## Methods
+## Instance methods
 
 _This interface inherits methods from its parent, {{domxref("Event")}}._
 

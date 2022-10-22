@@ -17,6 +17,7 @@ tags:
   - Visible Pages
 browser-compat: api.Document.visibilityState
 ---
+
 {{DefaultAPISidebar("Page Visibility API")}}
 
 The Page Visibility API provides events you can watch for to know when a document becomes visible or hidden, as well as features to look at the current visibility state of the page.
@@ -114,7 +115,7 @@ if (typeof document.addEventListener === "undefined" || hidden === undefined) {
 }
 ```
 
-## Properties added to the Document interface
+## Instance properties added to the Document interface
 
 The Page Visibility API adds the following properties to the {{domxref("Document")}} interface:
 

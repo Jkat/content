@@ -10,6 +10,7 @@ tags:
   - Polyfill
 browser-compat: javascript.builtins.Uint16Array
 ---
+
 {{JSRef}}
 
 The **`Uint16Array`** typed array represents an array of 16-bit unsigned integers in the platform byte order. If control over byte order is needed, use {{jsxref("DataView")}} instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
@@ -125,7 +126,9 @@ const z = new Uint16Array(buffer, 2, 4);
 console.log(z.byteOffset); // 2
 
 // From an iterable
-const iterable = function*() { yield* [1, 2, 3]; }();
+const iterable = (function* () {
+  yield* [1, 2, 3];
+})();
 const uint16FromIterable = new Uint16Array(iterable);
 console.log(uint16FromIterable);
 // Uint16Array [1, 2, 3]

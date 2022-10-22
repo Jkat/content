@@ -11,6 +11,7 @@ tags:
   - Reference
 browser-compat: javascript.builtins.Intl.Collator.Collator
 ---
+
 {{JSRef}}
 
 The **`Intl.Collator()`** constructor creates
@@ -23,7 +24,7 @@ comparison.
 
 ## Syntax
 
-```js
+```js-nolint
 new Intl.Collator()
 new Intl.Collator(locales)
 new Intl.Collator(locales, options)
@@ -66,6 +67,7 @@ Intl.Collator(locales, options)
         - `trad`
         - `unihan` (Chinese, Japanese, and Korean; not available in Chrome or Edge)
         - `zhuyin` (Chinese)
+
         This option can be also be set through the `options` property `collation`.
     - `kn`
       - : Whether numeric collation should be used, such that "1" < "2" <
@@ -157,6 +159,7 @@ Intl.Collator(locales, options)
         - `trad`
         - `unihan` (Chinese, Japanese, and Korean; not available in Chrome or Edge)
         - `zhuyin` (Chinese)
+
         > **Note:** This option can also be set through the `co` Unicode
         > extension key; if both are provided, this `options`
         > property takes precedence.
@@ -169,9 +172,9 @@ The following example demonstrates the different potential results for a string
 occurring before, after, or at the same level as another:
 
 ```js
-console.log(new Intl.Collator().compare('a', 'c')); // → a negative value
-console.log(new Intl.Collator().compare('c', 'a')); // → a positive value
-console.log(new Intl.Collator().compare('a', 'a')); // → 0
+console.log(new Intl.Collator().compare("a", "c")); // → a negative value
+console.log(new Intl.Collator().compare("c", "a")); // → a positive value
+console.log(new Intl.Collator().compare("a", "a")); // → 0
 ```
 
 Note that the results shown in the code above can vary between browsers and browser

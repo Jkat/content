@@ -11,6 +11,7 @@ tags:
   - Reference
 browser-compat: javascript.builtins.Intl.Collator.supportedLocalesOf
 ---
+
 {{JSRef}}
 
 The **`Intl.Collator.supportedLocalesOf()`** method returns an
@@ -23,7 +24,7 @@ having to fall back to the runtime's default locale.
 
 ## Syntax
 
-```js
+```js-nolint
 Intl.Collator.supportedLocalesOf(locales)
 Intl.Collator.supportedLocalesOf(locales, options)
 ```
@@ -67,9 +68,9 @@ decide that Indonesian is an adequate match for Balinese since most Balinese spe
 also understand Indonesian, and therefore return the Balinese language tag as well.
 
 ```js
-const locales = ['ban', 'id-u-co-pinyin', 'de-ID'];
-const options = { localeMatcher: 'lookup' };
-console.log(Intl.Collator.supportedLocalesOf(locales, options).join(', '));
+const locales = ["ban", "id-u-co-pinyin", "de-ID"];
+const options = { localeMatcher: "lookup" };
+console.log(Intl.Collator.supportedLocalesOf(locales, options).join(", "));
 // → "id-u-co-pinyin, de-ID"
 ```
 

@@ -3,6 +3,7 @@ title: MSSiteModeEvent
 slug: Web/API/MSSiteModeEvent
 page-type: web-api-interface
 ---
+
 {{APIRef("UI Events")}}{{Non-standard_header()}}
 
 **`MSSiteModeEvent`** provides event properties that are specific to pinned site events.
@@ -15,7 +16,7 @@ This proprietary method is specific to Internet Explorer and Microsoft Edge.
 
 MSSiteModeEvent
 
-### Methods
+### Instance methods
 
 <table class="no-markdown">
   <thead>
@@ -51,7 +52,7 @@ MSSiteModeEvent
   </tbody>
 </table>
 
-### Properties
+### Instance properties
 
 <table class="no-markdown">
   <thead>

@@ -8,6 +8,7 @@ tags:
   - Tutorial
   - WebSockets
 ---
+
 {{DefaultAPISidebar("Websockets API")}}
 
 If you would like to use the WebSocket API, it is useful if you have a server. In this article I will show you how to write one in C#. You can do it in any server-side language, but to keep things simple and more understandable, I chose Microsoft's language.
@@ -30,7 +31,7 @@ TcpListener(System.Net.IPAddress localaddr, int port)
 
 `localaddr` specifies the IP of the listener, and `port` specifies the port.
 
-> **Note:** To create an `IPAddress` object from a `string`, use the `Parse` static method of `IPAddress`_._
+> **Note:** To create an `IPAddress` object from a `string`, use the `Parse` static method of `IPAddress`.
 
 Methods:
 
@@ -75,17 +76,17 @@ Properties:
 
 Methods:
 
-- ```cs
+- Writes bytes from buffer, offset and size determine length of message.
+
+  ```cs
   Write(Byte[] buffer, int offset, int size)
   ```
 
-  Writes bytes from buffer, offset and size determine length of message.
+- Reads bytes to `buffer`. `offset` and `size` determine the length of the message.
 
-- ```cs
+  ```cs
   Read(Byte[] buffer, int offset, int size)
   ```
-
-  Reads bytes to `buffer`. `offset` and `size` determine the length of the message.
 
 Let us extend our example.
 

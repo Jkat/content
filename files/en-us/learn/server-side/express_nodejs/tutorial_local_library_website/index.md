@@ -1,5 +1,5 @@
 ---
-title: 'Express Tutorial: The Local Library website'
+title: "Express Tutorial: The Local Library website"
 slug: Learn/Server-side/Express_Nodejs/Tutorial_local_library_website
 tags:
   - Beginner
@@ -12,6 +12,7 @@ tags:
   - nodejs
   - server-side
 ---
+
 {{LearnSidebar}}{{PreviousMenuNext("Learn/Server-side/Express_Nodejs/development_environment", "Learn/Server-side/Express_Nodejs/skeleton_website", "Learn/Server-side/Express_Nodejs")}}
 
 The first article in our practical tutorial series explains what you'll learn, and provides an overview of the "local library" example website we'll be working through and evolving in subsequent articles.
@@ -21,21 +22,14 @@ The first article in our practical tutorial series explains what you'll learn, a
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
-        Read the
-        <a href="/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction"
-          >Express Introduction</a
-        >. For the following articles you'll also need to have
-        <a
-          href="/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment"
-          >set up a Node development environment</a
-        >.
+        Read the <a href="/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction">Express Introduction</a>.
+        For the following articles you'll also need to have <a href="/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment">set up a Node development environment</a>.
       </td>
     </tr>
     <tr>
       <th scope="row">Objective:</th>
       <td>
-        To introduce the example application used in this tutorial, and allow
-        readers to understand what topics will be covered.
+        To introduce the example application used in this tutorial, and allow readers to understand what topics will be covered.
       </td>
     </tr>
   </tbody>
@@ -75,7 +69,7 @@ Instead of copying and pasting all the code snippets, try typing them out, It'll
 
 If you get stuck, you can find the fully developed version of the website [on GitHub here](https://github.com/mdn/express-locallibrary-tutorial).
 
-> **Note:** The specific versions of node, Express, and the other modules that this documentation was tested against are listed in the project [package.json](https://github.com/mdn/express-locallibrary-tutorial/blob/master/package.json).
+> **Note:** The specific versions of node, Express, and the other modules that this documentation was tested against are listed in the project [package.json](https://github.com/mdn/express-locallibrary-tutorial/blob/main/package.json).
 
 ## Summary
 

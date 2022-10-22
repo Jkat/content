@@ -7,6 +7,7 @@ tags:
   - Prototype
 browser-compat: javascript.builtins.Error.cause
 ---
+
 {{JSRef}}
 
 The **`cause`** property indicates the specific original cause of an error.
@@ -44,7 +45,7 @@ Error messages written for human consumption may be inappropriate for machine pa
 function makeRSA(p, q) {
   if (!Number.isInteger(p) || !Number.isInteger(q)) {
     throw new Error('RSA key generation requires integer inputs.', {
-      cause: { code: 'NonInteger', value: [p, q] },
+      cause: { code: 'NonInteger', values: [p, q] },
     });
   }
   if (!areCoprime(p, q)) {

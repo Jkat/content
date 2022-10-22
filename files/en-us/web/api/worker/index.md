@@ -13,6 +13,7 @@ tags:
   - Workers
 browser-compat: api.Worker
 ---
+
 {{APIRef("Web Workers API")}}
 
 The **`Worker`** interface of the [Web Workers API](/en-US/docs/Web/API/Web_Workers_API) represents a background task that can be created via script, which can send messages back to its creator.
@@ -30,11 +31,11 @@ Workers may themselves spawn new workers, as long as those workers are hosted at
 - {{domxref("Worker.Worker", "Worker()")}}
   - : Creates a dedicated web worker that executes the script at the specified URL. This also works for [Blob URLs](/en-US/docs/Web/API/Blob).
 
-## Properties
+## Instance properties
 
 _Inherits properties from its parent, {{domxref("EventTarget")}}._
 
-## Methods
+## Instance methods
 
 _Inherits methods from its parent, {{domxref("EventTarget")}}._
 

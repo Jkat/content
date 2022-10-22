@@ -7,6 +7,7 @@ tags:
   - PointerEvent
   - touch
 ---
+
 {{DefaultAPISidebar("Pointer Events")}}
 
 Adding _gestures_ to an application can significantly improve the user experience. There are many types of gestures, from the simple single-touch _swipe_ gesture to the more complex multi-touch _twist_ gesture, where the touch points (aka _pointers_) move in different directions.
@@ -48,7 +49,7 @@ const prevDiff = -1;
 
 ### Register event handlers
 
-Event handlers are registered for the following pointer events: {{domxref("HTMLElement/pointerdown_event", "pointerdown")}}, {{domxref("HTMLElement/pointermove_event", "pointermove")}} and {{domxref("HTMLElement/pointerup_event", "pointerup")}}. The handler for {{domxref("HTMLElement/pointerup_event", "pointerup")}} is used for the {{domxref("HTMLElement/pointercancel_event", "pointercancel")}}, {{domxref("HTMLElement/pointerout_event", "pointerout")}} and {{domxref("HTMLElement/pointerleave_event", "pointerleave")}} events since these four events have the same semantics in this application.
+Event handlers are registered for the following pointer events: {{domxref("Element/pointerdown_event", "pointerdown")}}, {{domxref("Element/pointermove_event", "pointermove")}} and {{domxref("Element/pointerup_event", "pointerup")}}. The handler for {{domxref("Element/pointerup_event", "pointerup")}} is used for the {{domxref("Element/pointercancel_event", "pointercancel")}}, {{domxref("Element/pointerout_event", "pointerout")}} and {{domxref("Element/pointerleave_event", "pointerleave")}} events since these four events have the same semantics in this application.
 
 ```js
 function init() {
@@ -68,7 +69,7 @@ function init() {
 
 ### Pointer down
 
-The {{domxref("HTMLElement/pointerdown_event", "pointerdown")}} event is fired when a pointer (mouse, pen/stylus or touch point on a touchscreen) makes contact with the _contact surface_. In this application, the event's state must be cached in case this down event is part of a two-pointer pinch/zoom gesture.
+The {{domxref("Element/pointerdown_event", "pointerdown")}} event is fired when a pointer (mouse, pen/stylus or touch point on a touchscreen) makes contact with the _contact surface_. In this application, the event's state must be cached in case this down event is part of a two-pointer pinch/zoom gesture.
 
 ```js
 function pointerdownHandler(ev) {
@@ -81,7 +82,7 @@ function pointerdownHandler(ev) {
 
 ### Pointer move
 
-The {{domxref("HTMLElement/pointermove_event", "pointermove")}} event handler detects if a user is invoking a two-pointer pinch/zoom gesture. If two pointers are down, and the distance between the pointers is increasing (signifying a pinch out or zoom in), the element's background color is changed to `pink`, and if the distance between the pointers is decreasing (a pinch in or zoom out), the background color is changed to `lightblue`. In a more sophisticated application, pinch in or pinch out determination could be used to apply application-specific semantics.
+The {{domxref("Element/pointermove_event", "pointermove")}} event handler detects if a user is invoking a two-pointer pinch/zoom gesture. If two pointers are down, and the distance between the pointers is increasing (signifying a pinch out or zoom in), the element's background color is changed to `pink`, and if the distance between the pointers is decreasing (a pinch in or zoom out), the background color is changed to `lightblue`. In a more sophisticated application, pinch in or pinch out determination could be used to apply application-specific semantics.
 
 When this event is processed, the target's border is set to `dashed` to provide a clear visual indication the element has received a move event.
 
@@ -128,9 +129,9 @@ function pointermoveHandler(ev) {
 
 ### Pointer up
 
-The {{domxref("HTMLElement/pointerup_event", "pointerup")}} event is fired when a pointer is raised from the _contact surface_. When this occurs, the event is removed from the event cache and the target element's background color and border are restored to their original values.
+The {{domxref("Element/pointerup_event", "pointerup")}} event is fired when a pointer is raised from the _contact surface_. When this occurs, the event is removed from the event cache and the target element's background color and border are restored to their original values.
 
-In this application, this handler is also used for {{domxref("HTMLElement/pointercancel_event", "pointercancel")}}, {{domxref("HTMLElement/pointerleave_event", "pointerleave")}} and {{domxref("HTMLElement/pointerout_event", "pointerout")}} events.
+In this application, this handler is also used for {{domxref("Element/pointercancel_event", "pointercancel")}}, {{domxref("Element/pointerleave_event", "pointerleave")}} and {{domxref("Element/pointerout_event", "pointerout")}} events.
 
 ```js
 function pointerupHandler(ev) {
@@ -156,14 +157,16 @@ To prevent the browser's default touch behavior from overriding this application
 
 ```html
 <body onload="init();" style="touch-action:none">
- <div id="target">Touch and Hold with 2 pointers, then pinch in or out.<br/>
+  <div id="target">
+    Touch and Hold with 2 pointers, then pinch in or out.<br />
     The background color will change to pink if the pinch is opening (Zoom In)
-    or changes to lightblue if the pinch is closing (Zoom out).</div>
- <!-- UI for logging/debugging -->
- <button id="log" onclick="enableLog(event);">Start/Stop event logging</button>
- <button id="clearlog" onclick="clearLog(event);">Clear the log</button>
- <p></p>
- <output></output>
+    or changes to lightblue if the pinch is closing (Zoom out).
+  </div>
+  <!-- UI for logging/debugging -->
+  <button id="log" onclick="enableLog(event);">Start/Stop event logging</button>
+  <button id="clearlog" onclick="clearLog(event);">Clear the log</button>
+  <p></p>
+  <output></output>
 </body>
 ```
 

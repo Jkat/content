@@ -9,6 +9,7 @@ tags:
   - Web Performance
 browser-compat: api.PerformanceEntry.name
 ---
+
 {{APIRef("Performance Timeline API")}}
 
 The **`name`** property of the
@@ -33,6 +34,14 @@ the value of {{domxref("PerformanceEntry.entryType")}}, as shown by the table be
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>string</td>
+      <td>
+        {{domxref('PerformanceEventTiming')}}
+      </td>
+      <td><code>event</code>, <code>first-input</code></td>
+      <td>The associated event's type.</td>
+    </tr>
     <tr>
       <td>{{domxref("URL")}}</td>
       <td>

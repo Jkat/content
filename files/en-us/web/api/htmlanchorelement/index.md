@@ -9,13 +9,14 @@ tags:
   - Reference
 browser-compat: api.HTMLAnchorElement
 ---
+
 {{APIRef("HTML DOM")}}
 
 The **`HTMLAnchorElement`** interface represents hyperlink elements and provides special properties and methods (beyond those of the regular {{domxref("HTMLElement")}} object interface that they inherit from) for manipulating the layout and presentation of such elements. This interface corresponds to [`<a>`](/en-US/docs/Web/HTML/Element/a) element; not to be confused with [`<link>`](/en-US/docs/Web/HTML/Element/link), which is represented by [`HTMLLinkElement`](/en-US/docs/Web/API/HTMLLinkElement))
 
 {{InheritanceDiagram}}
 
-## Properties
+## Instance properties
 
 _Inherits properties from its parent, {{domxref("HTMLElement")}}._
 
@@ -79,7 +80,7 @@ _Inherits properties from its parent, {{domxref("HTMLElement")}}._
 - {{domxref("HTMLAnchorElement.shape")}} {{deprecated_inline}}
   - : A string representing the shape of the active area.
 
-## Methods
+## Instance methods
 
 _Inherits methods from its parent, {{domxref("HTMLElement")}}._
 

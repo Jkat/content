@@ -12,6 +12,7 @@ tags:
   - Sensors
 browser-compat: api.Sensor
 ---
+
 {{APIRef("Sensor API")}}
 
 The **`Sensor`** interface of the [Sensor APIs](/en-US/docs/Web/API/Sensor_APIs) is the base class for all the other sensor interfaces. This interface cannot be used directly. Instead it provides properties, event handlers, and methods accessed by interfaces that inherit from it.
@@ -36,7 +37,7 @@ Below is a list of interfaces based on the `Sensor` interface.
 - {{domxref('Magnetometer')}}
 - {{domxref('OrientationSensor')}}
 
-## Properties
+## Instance properties
 
 - {{domxref('Sensor.activated')}} {{ReadOnlyInline}}
   - : Returns a boolean value indicating whether the sensor is active.
@@ -45,7 +46,7 @@ Below is a list of interfaces based on the `Sensor` interface.
 - {{domxref('Sensor.timestamp')}} {{ReadOnlyInline}}
   - : Returns the time stamp of the latest sensor reading.
 
-## Methods
+## Instance methods
 
 - {{domxref('Sensor.start()')}}
   - : Activates one of the sensors based on `Sensor`.

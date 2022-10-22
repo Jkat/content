@@ -9,6 +9,7 @@ tags:
   - SVG DOM
 browser-compat: api.SVGPreserveAspectRatio
 ---
+
 {{APIRef("SVG")}}
 
 ## SVG preserveAspectRatio interface
@@ -255,7 +256,7 @@ An `SVGPreserveAspectRatio` object can be designated as read only, which means t
   </tbody>
 </table>
 
-## Properties
+## Instance properties
 
 <table class="no-markdown">
   <thead>
@@ -287,7 +288,7 @@ An `SVGPreserveAspectRatio` object can be designated as read only, which means t
 
 **Exceptions on setting:** a [`DOMException`](/en-US/docs/Web/API/DOMException) with code `NO_MODIFICATION_ALLOWED_ERR` is raised on an attempt to change the value of an attribute on a read only object.
 
-## Methods
+## Instance methods
 
 The `SVGPreserveAspectRatio` interface do not provide any specific methods.
 

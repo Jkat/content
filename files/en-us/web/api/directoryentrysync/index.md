@@ -13,6 +13,7 @@ tags:
   - Deprecated
 browser-compat: api.DirectoryEntrySync
 ---
+
 {{APIRef("File and Directory Entries API")}}{{Non-standard_Header}}{{Deprecated_Header}}
 
 The `DirectoryEntrySync` interface represents a directory in a file system. It includes methods for creating, reading, looking up, and recursively removing files in a directory.
@@ -45,7 +46,7 @@ const dirEntry = fs.root.getDirectory('project_dir', {create: true});
 - <a href="#getdirectory">getDirectory()</a>
 - <a href="#removerecursively">removeRecursively()</a>
 
-## Methods
+## Instance methods
 
 ### createReader()
 

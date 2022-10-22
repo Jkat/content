@@ -10,6 +10,7 @@ tags:
   - Polyfill
 browser-compat: javascript.builtins.Int32Array
 ---
+
 {{JSRef}}
 
 The **`Int32Array`** typed array represents an array of twos-complement 32-bit signed integers in the platform byte order. If control over byte order is needed, use {{jsxref("DataView")}} instead. The contents are initialized to `0`. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).
@@ -125,7 +126,9 @@ const z = new Int32Array(buffer, 4, 4);
 console.log(z.byteOffset); // 4
 
 // From an iterable
-const iterable = function*() { yield* [1, 2, 3]; }();
+const iterable = (function* () {
+  yield* [1, 2, 3];
+})();
 const int32FromIterable = new Int32Array(iterable);
 console.log(int32FromIterable);
 // Int32Array [1, 2, 3]

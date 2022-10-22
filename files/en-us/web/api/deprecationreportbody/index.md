@@ -11,6 +11,7 @@ tags:
   - Reporting API
 browser-compat: api.DeprecationReportBody
 ---
+
 {{APIRef("Reporting API")}}{{SeeCompatTable}}
 
 The `DeprecationReportBody` interface of the [Reporting API](/en-US/docs/Web/API/Reporting_API) represents the body of a deprecation report.
@@ -23,7 +24,7 @@ A deprecation report is generated when a deprecated feature (for example a depre
 
 An instance of `DeprecationReportBody` is returned as the value of {{domxref("Report.body")}} when {{domxref("Report.Type")}} is `deprecation`. The interface has no constructor.
 
-## Properties
+## Instance properties
 
 This interface also inherits properties from {{domxref("ReportBody")}}.
 
@@ -40,7 +41,7 @@ This interface also inherits properties from {{domxref("ReportBody")}}.
 - {{domxref("DeprecationReportBody.columnNumber")}} {{experimental_inline}}
   - : A number representing the column in the source file in which the deprecated feature was used, if known, or `null` otherwise.
 
-## Methods
+## Instance methods
 
 This interface also inherits methods from {{domxref("ReportBody")}}.
 
@@ -93,7 +94,7 @@ function displayReports(reports) {
       innerListItem.textContent = `${key}: ${value}`;
       innerList.appendChild(innerListItem);
     }
-  }
+  });
 }
 ```
 
